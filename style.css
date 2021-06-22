@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: lightgray;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+span {
+    text-decoration: underline;
+}
+
+/* navbar */
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: 1px solid red;
+}
+
+header {
+    color: red;
+    font-size: 1.5rem;
+    margin: 15px;
+    letter-spacing: 2px;
+}
+
+#main-doc header{
+    text-align: left;
+    margin: 0px;
+}
+
+#navbar header{
+    text-align: center;
+}
+
+#navbar li{
+    list-style: none;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid red;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* main content */
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section article{
+    margin: 15px;
+}
+
+article p {
+    margin: 15px;
+}
+
+article ul {
+    padding: 10px;
+    margin-left: 30px;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+#Declarations li{
+    list-style: none;
+    padding: 0px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: lightgray;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+article ul {
+    padding-left: 20px;
+}
+
+/* media queries */
+@media only screen and (max-width: 600px){
+    #navbar {
+        width: 100%;
+        position: relative;
+        height: 200px;
+    }
+
+    #main-doc{
+        margin-left: 0px;
+        top: 450px;
+    }
+
+    #main-doc header{
+        text-align: center;
+        font-weight: bold;
+        margin: 30px;
+    }
+}
